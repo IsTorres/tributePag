@@ -1,3 +1,3 @@
 # Tribute Pag
 
-### A simnple project to test somethings 
+### A simple project to test somethings 
