@@ -1,0 +1,204 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #222;   
+}
+
+.index {
+    background-image: url("../images/ChestertonBG.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 900px;
+}
+
+header {
+    height: 60px;
+}
+/* Fixed menu */
+.menu {
+    overflow: hidden;
+    top: 0;
+    width: 100%;
+    background-color: #333;
+}
+
+.menu nav {
+    top: 0;
+    list-style: none;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding: 16px 0;
+}
+
+ul a {
+    font-family: arial;
+    font-size: 25px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+ul a:hover {
+    text-shadow: 3px 3px 5px #000;
+}
+
+.container {
+    width: 100%;
+    height: 90%;
+}
+
+.container h1{
+    padding: 10% 0 15px;
+    margin-left: 7%;
+    text-shadow: 5px 5px black;
+    font-size: 75px;
+    font-family: tahoma;
+    color: #fff;
+}
+
+.container h2{
+    margin-left: 7%;
+    text-shadow: 3px 3px 5px black;
+    font-size: 20px;
+    font-family: Brush Script MT ; 
+    color: #bbb;
+}
+
+.container p {
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.tribute {
+    color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+}
+
+.footer {
+    width: 100%;
+    bottom: 0;
+    height: 45px;
+    background-color: #333;
+}
+
+.footer p {
+    display: flex;
+    justify-content: center;
+    margin: 9px 50px;
+    padding-top: 10px;
+    color: #888;
+    border-top: 1px solid #888;
+    opacity: 0.5;
+}
+
+.resume_img {
+    display: flex;
+    flex-direction: row;
+}
+
+.polaroid {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-top: 40px;
+}
+
+
+img {
+    border: 10px solid #ccc;
+    border-bottom: 55px solid #ccc;
+    width: 20%;
+    -ms-transform: rotate(3deg);
+    transform: rotate(3deg);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.9)
+}
+
+.resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 10px solid #fff;
+    padding: 10px;
+    background-color: #ccc;
+    margin: 0 20% 5%;
+    margin-top: 40px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+}
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.column {
+    width: 50%;
+    padding: 10px;
+    margin: 15px;
+}
+
+@media (max-width: 800px) {
+    ul a {
+        transition: none;
+    }
+
+    .column {
+        height: auto;
+    }
+
+    .resume {
+        margin: 30px 15px;
+    }
+
+    .footer {
+        position: initial;
+        padding-top: 5px;
+    }
+
+
+}
+
+@media (max-width: 500px) {
+    header {
+        height: 140px;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+
+    ul li {
+        padding: 5px;
+    }
+
+    ul a {
+        transition: none;
+    }
+
+    .container h1 {
+        margin: 7%;
+        font-size: 45px;
+    }
+
+    .polaroid img {
+        width: 50%;
+    }
+}
